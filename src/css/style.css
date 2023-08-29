@@ -1,0 +1,143 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-main {
+    background-color: #d1d1d183;
+    width: 35%;
+    min-width: 250px;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 150px auto 0;
+}
+
+.input-task {
+    border: none;
+    border-radius: 10px;
+    width: 65%;
+    min-width: 140px;
+    height: 5vh;
+    padding-left: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.button-add-task {
+    width: 28%;
+    min-width: 55px;
+    border: none;
+    border-radius: 10px;
+    height: 5vh;
+    background-color: #8B008B;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 2%;
+    float: right;
+    cursor: pointer;
+}
+
+.button-add-task:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.button-add-task:active {
+    opacity: 0.5;
+    transition: none;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 10%;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.list-tasks::-webkit-scrollbar {
+    width: 10px;
+}
+
+.list-tasks::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.list-tasks::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.task {
+    background-color: #f2f2f267;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.task p {
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.checked-task {
+    margin-right: 3%;
+}
+
+.delete-task {
+    margin-left: 3%;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.685);
+    position: fixed;
+    bottom: 0;
+}
+
+.mark{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.mark a {
+    color: #ffffff;
+}
+
+.mark a:hover {
+    text-decoration: underline;
+}
